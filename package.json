@@ -1,10 +1,10 @@
 {
   "name": "vue3-tsxcomponentdev",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
+    "serve": "vite --mode development",
+    "serve:test": "vite --mode test",
+    "serve:pre": "vite --mode pre",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -15,6 +15,7 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@iconify/json": "^2.1.118",
+    "@vitejs/plugin-legacy": "^2.2.0",
     "@vitejs/plugin-vue": "^3.1.0",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "autoprefixer": "^10.4.12",
@@ -51,5 +52,8 @@
     "vite-plugin-svg-icons": "^2.0.1",
     "vue-eslint-parser": "^9.1.0",
     "vue-tsc": "^0.40.13"
+  },
+  "engines": {
+    "node": "^12 || >=14"
   }
 }

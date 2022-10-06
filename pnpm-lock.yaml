@@ -4,6 +4,7 @@ specifiers:
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
   '@iconify/json': ^2.1.118
+  '@vitejs/plugin-legacy': ^2.2.0
   '@vitejs/plugin-vue': ^3.1.0
   '@vitejs/plugin-vue-jsx': ^2.0.1
   autoprefixer: ^10.4.12
@@ -49,6 +50,7 @@ devDependencies:
   '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/17.1.2
   '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/17.1.0
   '@iconify/json': registry.npmmirror.com/@iconify/json/2.1.118
+  '@vitejs/plugin-legacy': registry.npmmirror.com/@vitejs/plugin-legacy/2.2.0
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/3.1.2_vite@3.1.4+vue@3.2.40
   '@vitejs/plugin-vue-jsx': registry.npmmirror.com/@vitejs/plugin-vue-jsx/2.0.1_vite@3.1.4+vue@3.2.40
   autoprefixer: registry.npmmirror.com/autoprefixer/10.4.12_postcss@8.4.17
@@ -412,6 +414,13 @@ packages:
       '@babel/plugin-syntax-typescript': registry.npmmirror.com/@babel/plugin-syntax-typescript/7.18.6_@babel+core@7.19.3
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  registry.npmmirror.com/@babel/standalone/7.19.3:
+    resolution: {integrity: sha512-zSdDx28L6f27Y59OMrl8mBbtyB/cpIGlHm7wVOHlcmUTpD10AiUILkekZATkkpsuTagTWezdJmUaeY8P2SONUA==, registry: https://packages.aliyun.com/60c30966c033f37cf9f3e0ca/npm/npm-registry/, tarball: https://registry.npmmirror.com/@babel/standalone/-/standalone-7.19.3.tgz}
+    name: '@babel/standalone'
+    version: 7.19.3
+    engines: {node: '>=6.9.0'}
     dev: true
 
   registry.npmmirror.com/@babel/template/7.18.10:
@@ -1004,6 +1013,19 @@ packages:
     version: 2.6.4
     dependencies:
       '@types/node': registry.npmmirror.com/@types/node/18.8.2
+    dev: true
+
+  registry.npmmirror.com/@vitejs/plugin-legacy/2.2.0:
+    resolution: {integrity: sha512-xkSXZl2LNk0KKyo5CJknNW84mSlmHIClFzsBuFXkX3yBt+Lr8UO/n4QOg2X7+jvurgBRies9FRn3ZvMem+TmIg==, registry: https://packages.aliyun.com/60c30966c033f37cf9f3e0ca/npm/npm-registry/, tarball: https://registry.npmmirror.com/@vitejs/plugin-legacy/-/plugin-legacy-2.2.0.tgz}
+    name: '@vitejs/plugin-legacy'
+    version: 2.2.0
+    engines: {node: ^14.18.0 || >=16.0.0}
+    dependencies:
+      '@babel/standalone': registry.npmmirror.com/@babel/standalone/7.19.3
+      core-js: registry.npmmirror.com/core-js/3.25.5
+      magic-string: registry.npmmirror.com/magic-string/0.26.5
+      regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.9
+      systemjs: registry.npmmirror.com/systemjs/6.13.0
     dev: true
 
   registry.npmmirror.com/@vitejs/plugin-vue-jsx/2.0.1_vite@3.1.4+vue@3.2.40:
@@ -2072,6 +2094,13 @@ packages:
     name: copy-descriptor
     version: 0.1.1
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  registry.npmmirror.com/core-js/3.25.5:
+    resolution: {integrity: sha512-nbm6eZSjm+ZuBQxCUPQKQCoUEfFOXjUZ8dTTyikyKaWrTYmAVbykQfwsKE5dBK88u3QCkCrzsx/PPlKfhsvgpw==, registry: https://packages.aliyun.com/60c30966c033f37cf9f3e0ca/npm/npm-registry/, tarball: https://registry.npmmirror.com/core-js/-/core-js-3.25.5.tgz}
+    name: core-js
+    version: 3.25.5
+    requiresBuild: true
     dev: true
 
   registry.npmmirror.com/cors/2.8.5:
@@ -4573,6 +4602,15 @@ packages:
     dependencies:
       sourcemap-codec: registry.npmmirror.com/sourcemap-codec/1.4.8
 
+  registry.npmmirror.com/magic-string/0.26.5:
+    resolution: {integrity: sha512-yXUIYOOQnEHKHOftp5shMWpB9ImfgfDJpapa38j/qMtTj5QHWucvxP4lUtuRmHT9vAzvtpHkWKXW9xBwimXeNg==, registry: https://packages.aliyun.com/60c30966c033f37cf9f3e0ca/npm/npm-registry/, tarball: https://registry.npmmirror.com/magic-string/-/magic-string-0.26.5.tgz}
+    name: magic-string
+    version: 0.26.5
+    engines: {node: '>=12'}
+    dependencies:
+      sourcemap-codec: registry.npmmirror.com/sourcemap-codec/1.4.8
+    dev: true
+
   registry.npmmirror.com/make-dir/2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==, registry: https://packages.aliyun.com/60c30966c033f37cf9f3e0ca/npm/npm-registry/, tarball: https://registry.npmmirror.com/make-dir/-/make-dir-2.1.0.tgz}
     name: make-dir
@@ -5757,6 +5795,12 @@ packages:
       strip-indent: registry.npmmirror.com/strip-indent/3.0.0
     dev: true
 
+  registry.npmmirror.com/regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==, registry: https://packages.aliyun.com/60c30966c033f37cf9f3e0ca/npm/npm-registry/, tarball: https://registry.npmmirror.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz}
+    name: regenerator-runtime
+    version: 0.13.9
+    dev: true
+
   registry.npmmirror.com/regex-not/1.0.2:
     resolution: {integrity: sha512-J6SDjUgDxQj5NusnOtdFxDwN/+HWykR8GELwctJ7mdqhcyy1xEc4SRFHUXvxTp661YaVKAjfRLZ9cCqS6tn32A==, registry: https://packages.aliyun.com/60c30966c033f37cf9f3e0ca/npm/npm-registry/, tarball: https://registry.npmmirror.com/regex-not/-/regex-not-1.0.2.tgz}
     name: regex-not
@@ -6652,6 +6696,12 @@ packages:
       csso: registry.npmmirror.com/csso/4.2.0
       picocolors: registry.npmmirror.com/picocolors/1.0.0
       stable: registry.npmmirror.com/stable/0.1.8
+    dev: true
+
+  registry.npmmirror.com/systemjs/6.13.0:
+    resolution: {integrity: sha512-P3cgh2bpaPvAO2NE3uRp/n6hmk4xPX4DQf+UzTlCAycssKdqhp6hjw+ENWe+aUS7TogKRFtptMosTSFeC6R55g==, registry: https://packages.aliyun.com/60c30966c033f37cf9f3e0ca/npm/npm-registry/, tarball: https://registry.npmmirror.com/systemjs/-/systemjs-6.13.0.tgz}
+    name: systemjs
+    version: 6.13.0
     dev: true
 
   registry.npmmirror.com/table/6.8.0:

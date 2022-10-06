@@ -1,4 +1,4 @@
-import type { Plugin } from 'vite';
+import type { Plugin, PluginOption } from 'vite';
 
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
@@ -16,7 +16,7 @@ import { configHmrPlugin } from './hmr';
 export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   const { VITE_LEGACY, VITE_BUILD_COMPRESS, VITE_BUILD_COMPRESS_DELETE_ORIGIN_FILE } = viteEnv;
 
-  const vitePlugins: (Plugin | Plugin[])[] = [
+  const vitePlugins: (Plugin | Plugin[] | PluginOption | PluginOption[])[] = [
     // have to
     vue(),
     // have to
